@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI参謀室 — サービスサイト モック（デモ公開）</title>
+  <link rel="stylesheet" href="mock.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-logo" href="#/">AI参謀室 <span>サービスサイト（モック）</span></a>
+      <nav class="nav-main" aria-label="メインナビゲーション">
+        <a href="#/" data-public-nav="home">トップ</a>
+        <a href="#/program" data-public-nav="program">プログラム</a>
+        <a href="#/plan" data-public-nav="plan">プラン</a>
+        <a href="#/flow" data-public-nav="flow">ご利用の流れ</a>
+        <a href="#/faq" data-public-nav="faq">FAQ</a>
+        <a href="#/contact" data-public-nav="contact">お問い合わせ</a>
+        <button type="button" class="btn btn--primary" data-open-login>会員ログイン</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="public-main">
+    <main class="main-wrap">
+      <!-- トップ -->
+      <section id="view-home" class="view">
+        <div class="hero">
+          <div class="tag">USP（モック文言）</div>
+          <h1>研修でも、コンサルでもない。<br />社長直下のAI推進チームが手に入る、AI経営プログラム。</h1>
+          <p>
+            One Thing は「社長がAIを理解し、社長直下のAI推進チームを作ること」。本番では社内の
+            <strong>USP表現方針</strong>・営業資料に合わせてコピーを確定してください。このURLは
+            GitHub Pages 等向けに<strong>単体で動くモック</strong>のため、リポジトリ内のMarkdownへのリンクは置いていません。
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="#/program">プログラムを見る</a>
+            <a class="btn" style="background:#e2e8f0;color:#0f172a;" href="#/contact">資料請求・相談</a>
+            <button type="button" class="btn" style="background:transparent;border:1px solid #cbd5e1;" data-open-login>
+              会員ログイン（モーダル）
+            </button>
+            <button type="button" class="btn btn--primary" data-quick-demo-login>
+              会員画面を試す（ワンクリック・認証なし）
+            </button>
+          </div>
+          <p style="margin-top:16px;font-size:0.85rem;color:var(--muted);max-width:520px;">
+            ダミーログイン：モーダルで「ログインする」を押すだけで会員エリアに入れます。メール・パスワードは未検証です。上のボタンならモーダルなしで即表示できます。
+          </p>
+        </div>
+        <p class="section-title">3カテゴリ × 6機能（概要）</p>
+        <div class="card-grid">
+          <article class="card">
+            <div class="tag">知る・学ぶ</div>
+            <h3>ナレッジベース</h3>
+            <p>eラーニング（アーカイブ動画・資料）— 随時</p>
+          </article>
+          <article class="card">
+            <div class="tag">知る・学ぶ</div>
+            <h3>経営層向け研修</h3>
+            <p>ライブ研修 L1/L2/L3 — 月2〜8回</p>
+          </article>
+          <article class="card">
+            <div class="tag">実践・浸透</div>
+            <h3>グループコンサル（グルコン）</h3>
+            <p>少人数ディスカッション — 月1〜2回</p>
+          </article>
+          <article class="card">
+            <div class="tag">実践・浸透</div>
+            <h3>スキルファクトリー</h3>
+            <p>プロンプトパック配布 — 随時</p>
+          </article>
+          <article class="card">
+            <div class="tag">つながる</div>
+            <h3>AI経営会議</h3>
+            <p>半日カンファレンス — 四半期・リアル</p>
+          </article>
+          <article class="card">
+            <div class="tag">つながる</div>
+            <h3>コミュニティ交流会</h3>
+            <p>ゲスト事例＋NW — 隔月・リアル</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- プログラム -->
+      <section id="view-program" class="view">
+        <div class="hero">
+          <h1>プログラム概要</h1>
+          <p>会員はログイン後、日程・資料・次アクションをこのサイトで一元確認できる想定です（情報設計ドラフト v1 に準拠）。</p>
+        </div>
+        <p class="section-title">① 知る・学ぶ</p>
+        <div class="card-grid">
+          <article class="card">
+            <h3>ナレッジベース</h3>
+            <p>アーカイブ視聴、必須コンテンツの導線。会員エリアの「ナレッジベース」からアクセス。</p>
+          </article>
+          <article class="card">
+            <h3>経営層向け研修</h3>
+            <p>トラック別のライブ日程、会場、事前資料。録画・配布物のポリシーは仕様書に準拠。</p>
+          </article>
+        </div>
+        <p class="section-title">② 実践・浸透</p>
+        <div class="card-grid">
+          <article class="card">
+            <h3>グループコンサル（グルコン）</h3>
+            <p>回次・テーマ・事前インプット。経営者が「次に何を持っていけばよいか」を明示。</p>
+          </article>
+          <article class="card">
+            <h3>スキルファクトリー</h3>
+            <p>プロンプトパックの新着・推奨。会員ホームでは要約、詳細は専用ページへ。</p>
+          </article>
+        </div>
+        <p class="section-title">③ つながる</p>
+        <div class="card-grid">
+          <article class="card">
+            <h3>AI経営会議</h3>
+            <p>四半期リアル開催の案内、申込、資料アーカイブへのリンク。</p>
+          </article>
+          <article class="card">
+            <h3>コミュニティ交流会</h3>
+            <p>隔月リアル。ゲスト・会場・ネットワーキングの注意事項。</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- プラン -->
+      <section id="view-plan" class="view">
+        <div class="hero">
+          <h1>プラン・料金（例示）</h1>
+          <p>数値は全体設計の例に合わせたモックです。契約条件は営業資料を正としてください。</p>
+        </div>
+        <div class="pricing-row">
+          <article class="pricing-card">
+            <div class="plan-label">LIGHT</div>
+            <div class="price">40<span>万円/月（税別）</span></div>
+            <p style="font-size:0.875rem;color:var(--muted);margin:0;">社長1名 · 全6機能利用可</p>
+          </article>
+          <article class="pricing-card pricing-card--featured">
+            <div class="plan-label">STANDARD</div>
+            <div class="price">60<span>万円/月（税別）</span></div>
+            <p style="font-size:0.875rem;color:var(--muted);margin:0;">社長＋幹部2名 · 全6機能利用可</p>
+          </article>
+          <article class="pricing-card">
+            <div class="plan-label">PREMIUM</div>
+            <div class="price">80<span>万円/月（税別）</span></div>
+            <p style="font-size:0.875rem;color:var(--muted);margin:0;">社長＋幹部5名 · 全6機能利用可</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ご利用の流れ -->
+      <section id="view-flow" class="view">
+        <div class="hero">
+          <h1>ご利用の流れ</h1>
+          <p>契約から会員サイト利用までのイメージです。</p>
+        </div>
+        <ol style="padding-left:1.25rem;max-width:560px;line-height:1.8;color:var(--muted);">
+          <li>お問い合わせ・商談・お申し込み</li>
+          <li>契約締結・請求開始</li>
+          <li>会員アカウント発行（メール招待想定）</li>
+          <li>会員サイトにログイン → 直近の研修・グルコン・リアル日程を確認</li>
+          <li>スキルファクトリー・ナレッジベースで実装を加速</li>
+        </ol>
+      </section>
+
+      <!-- FAQ -->
+      <section id="view-faq" class="view">
+        <div class="hero">
+          <h1>よくある質問</h1>
+          <p>期待値調整用のダミー回答です。</p>
+        </div>
+        <div class="faq-item">
+          <button type="button">研修と何が違うのですか？ <span aria-hidden="true">▼</span></button>
+          <div class="faq-item__panel">
+            単発の知識提供ではなく、社長直下の推進体制づくりまでをプログラム設計の中心に置く点が異なります（USP表現方針に準拠した文面に差し替えください）。
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button">録画はいつまで見られますか？ <span aria-hidden="true">▼</span></button>
+          <div class="faq-item__panel">
+            コンテンツごとに保持期間・利用範囲が異なります。会員サイト上でポリシーを明示する想定です。
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button">幹部も同じ画面を見られますか？ <span aria-hidden="true">▼</span></button>
+          <div class="faq-item__panel">
+            プランに応じた席数でログインアカウントを発行する想定です。ロール別UIは将来検討。
+          </div>
+        </div>
+      </section>
+
+      <!-- お問い合わせ -->
+      <section id="view-contact" class="view">
+        <div class="hero">
+          <h1>お問い合わせ</h1>
+          <p>送信はモックでは動作しません。</p>
+        </div>
+        <form id="contact-form" class="form-simple">
+          <label for="co-name">会社名</label>
+          <input id="co-name" name="company" type="text" autocomplete="organization" />
+
+          <label for="co-mail">メール</label>
+          <input id="co-mail" name="email" type="email" autocomplete="email" />
+
+          <label for="co-body">お問い合わせ内容</label>
+          <textarea id="co-body" name="body"></textarea>
+
+          <button type="submit" class="btn btn--solid">送信する（モック）</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        © SHIFT AI — AI参謀室サービスサイト モック（静的デモ） /
+        <code>shift-ai-fs</code> リポジトリと同列のフォルダ単体で公開可能です。
+      </p>
+    </footer>
+  </div>
+
+  <!-- 会員エリア -->
+  <div class="member-shell">
+    <aside class="member-sidebar">
+      <div class="member-sidebar__brand">AI参謀室 · 会員サイト</div>
+      <div class="member-sidebar__plan">STANDARD（モック）· 株式会社サンプル</div>
+      <nav class="member-nav" aria-label="会員メニュー">
+        <a href="#/member" data-nav="home">ホーム</a>
+        <a href="#/member/schedule" data-nav="schedule">スケジュール</a>
+        <div class="member-nav__label">プログラム</div>
+        <a href="#/member/training" data-nav="training">経営層向け研修</a>
+        <a href="#/member/group-consulting" data-nav="group-consulting">グルコン</a>
+        <a href="#/member/skill-factory" data-nav="skill-factory">スキルファクトリー</a>
+        <a href="#/member/conference" data-nav="conference">AI経営会議</a>
+        <a href="#/member/community" data-nav="community">コミュニティ交流会</a>
+        <a href="#/member/library" data-nav="library">ナレッジベース</a>
+        <div class="member-nav__label">その他</div>
+        <a href="#/member/account" data-nav="account">アカウント</a>
+        <a href="#/" data-logout>ログアウト（表サイトへ）</a>
+      </nav>
+    </aside>
+    <div class="member-main">
+      <!-- 会員ホーム -->
+      <div class="view" data-member-view="home">
+        <div class="member-header">
+          <div>
+            <h1>おかえりなさい、山田様</h1>
+            <p>直近の予定と、次にやることをまとめています（経営者向けダッシュボード・モック）。</p>
+          </div>
+          <button type="button" class="btn btn--ghost" style="color:var(--text);border-color:var(--border);" data-logout>
+            ログアウト
+          </button>
+        </div>
+        <div class="notice-bar">【お知らせ】4/27 経営層向け研修 · グルコン第1回の事前資料を公開しました。</div>
+        <div class="dash-grid dash-grid--top">
+          <div>
+            <div class="module" style="margin-bottom:20px;">
+              <div class="module__head">
+                <h2>今週・直近の予定</h2>
+                <span class="module__badge">P0</span>
+              </div>
+              <div class="module__body">
+                <ul class="timeline">
+                  <li>
+                    <time>4/25</time>
+                    <div><strong>経営層向け研修</strong> — 事前動画 15分（視聴推奨）</div>
+                  </li>
+                  <li>
+                    <time>4/27</time>
+                    <div><strong>ライブ研修＋グルコン</strong> — 日比谷（リアル）14:00〜</div>
+                  </li>
+                  <li>
+                    <time>4/30</time>
+                    <div><strong>締切</strong> — グルコン用ワークシート提出</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module__head">
+                <h2>次にやること</h2>
+                <span class="module__badge">P0</span>
+              </div>
+              <div class="module__body">
+                <ul class="todo-list">
+                  <li>
+                    <input type="checkbox" id="t1" />
+                    <label for="t1">事前動画を視聴する（経営層向け研修）</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="t2" />
+                    <label for="t2">4/27 会場アクセスMAPを保存する</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="t3" />
+                    <label for="t3">幹部2名に当日スケジュールを共有する</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="module" style="margin-bottom:20px;">
+              <div class="module__head">
+                <h2>スキルファクトリー</h2>
+                <span class="module__badge">P2 要約</span>
+              </div>
+              <div class="module__body">
+                <div class="mini-cards">
+                  <div class="mini-card">
+                    <strong>新着：議事録要約プロンプト v2</strong>
+                    経営会議のメモから1枚サマリーを作るテンプレートです。
+                  </div>
+                  <a href="#/member/skill-factory">詳細・ダウンロードへ →</a>
+                </div>
+              </div>
+            </div>
+            <div class="module" style="margin-bottom:20px;">
+              <div class="module__head">
+                <h2>ナレッジベース</h2>
+                <span class="module__badge">推奨</span>
+              </div>
+              <div class="module__body">
+                <p style="font-size:0.875rem;color:var(--muted);margin:0 0 12px;">必須：L1 イントロダクション（約20分）</p>
+                <a class="btn btn--solid" style="width:100%;" href="#/member/library">ライブラリを開く</a>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module__head">
+                <h2>直近セッションのフォロー</h2>
+              </div>
+              <div class="module__body">
+                <p style="font-size:0.875rem;color:var(--muted);margin:0;">前回 3/30 グルコンの共有資料を表示するエリア（モック）。</p>
+                <a href="#" style="font-size:0.875rem;margin-top:10px;display:inline-block;">資料PDF（ダミーリンク）</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="view" data-member-view="schedule">
+        <div class="member-header">
+          <h1>スケジュール</h1>
+          <p>全タッチポイントのリスト／カレンダー（本番は連携またはCMS）。</p>
+        </div>
+        <div class="module">
+          <div class="module__body">
+            <ul class="timeline">
+              <li><time>4/27</time><div>経営層向け研修 · グルコン（リアル）</div></li>
+              <li><time>5/15</time><div>グルコン（オンライン）</div></li>
+              <li><time>5/24</time><div>コミュニティ交流会（リアル）</div></li>
+              <li><time>6月</time><div>AI経営会議（四半期・日程調整中）</div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="view" data-member-view="training">
+        <div class="member-header">
+          <h1>経営層向け研修</h1>
+          <p>回次別のページに分割する想定です。</p>
+        </div>
+        <div class="card">
+          <h3>第1回（4/27）</h3>
+          <p>会場：〇〇ホール（モック）<br />資料：<a href="#">事前PDF</a> · <a href="#">録画（提供開始後）</a></p>
+        </div>
+      </div>
+
+      <div class="view" data-member-view="group-consulting">
+        <div class="member-header">
+          <h1>グループコンサル（グルコン）</h1>
+        </div>
+        <div class="card">
+          <h3>第1回テーマ（例）</h3>
+          <p>自社のAI推進体制の棚卸し。事前ワークシートは4/30締切。</p>
+        </div>
+      </div>
+
+      <div class="view" data-member-view="skill-factory">
+        <div class="member-header">
+          <h1>スキルファクトリー</h1>
+          <p>プロンプトパック一覧・更新履歴（モック）。</p>
+        </div>
+        <div class="card-grid">
+          <article class="card"><h3>議事録要約 v2</h3><p>ZIP · 最終更新 4/20</p></article>
+          <article class="card"><h3>採用面接サマリー</h3><p>ZIP · 最終更新 4/12</p></article>
+          <article class="card"><h3>営業メール下書き</h3><p>ZIP · 最終更新 3/28</p></article>
+        </div>
+      </div>
+
+      <div class="view" data-member-view="conference">
+        <div class="member-header">
+          <h1>AI経営会議</h1>
+        </div>
+        <div class="card"><p>次回：2026年Q2開催予定（モック）。申込・タイムテーブルはここに集約。</p></div>
+      </div>
+
+      <div class="view" data-member-view="community">
+        <div class="member-header">
+          <h1>コミュニティ交流会</h1>
+        </div>
+        <div class="card"><p>次回：5/24（モック）。ゲスト・会場詳細のエリア。</p></div>
+      </div>
+
+      <div class="view" data-member-view="library">
+        <div class="member-header">
+          <h1>ナレッジベース</h1>
+        </div>
+        <div class="card"><p>動画・スライドのアーカイブ。検索・タグは v2 以降の想定です。</p></div>
+      </div>
+
+      <div class="view" data-member-view="account">
+        <div class="member-header">
+          <h1>アカウント</h1>
+        </div>
+        <div class="card">
+          <p>プラン：STANDARD<br />シート：社長＋幹部2名<br />サポート：ログアウト後、表サイトの「お問い合わせ」からご連絡ください。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ログインモーダル -->
+  <div id="login-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="login-title">
+    <div class="modal">
+      <h2 id="login-title">会員ログイン（モック）</h2>
+      <p>
+        メール・パスワードは<strong>未検証</strong>です。「ログインする」を押すだけで会員ダッシュボードに切り替わります。タブを閉じると（通常は）ログイン状態が消えます。
+      </p>
+      <form id="login-form">
+        <div class="field">
+          <label for="login-email">メールアドレス</label>
+          <input id="login-email" type="email" autocomplete="username" value="demo@example.com" />
+        </div>
+        <div class="field">
+          <label for="login-pass">パスワード</label>
+          <input id="login-pass" type="password" autocomplete="current-password" value="dummy" />
+        </div>
+        <div class="modal__actions">
+          <button type="button" class="btn" style="background:var(--surface-2);color:var(--text);" data-close-modal>キャンセル</button>
+          <button type="submit" class="btn btn--solid">ログインする</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="mock.js"></script>
+</body>
+</html>
