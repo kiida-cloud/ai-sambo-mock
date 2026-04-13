@@ -7,34 +7,6 @@
   <link rel="stylesheet" href="mock.css" />
 </head>
 <body>
-  <!-- 閲覧用パスワード（gate.js・限定的なクライアント制御） -->
-  <div id="auth-gate" class="auth-gate" role="dialog" aria-modal="true" aria-labelledby="auth-gate-title">
-    <div class="auth-gate__panel">
-      <h2 id="auth-gate-title">このサイトを表示するにはパスワードが必要です</h2>
-      <p>配布した閲覧用パスワードを入力してください。同じブラウザのタブでは、一度通過するとしばらく再入力不要です。前後の空白は無視し、英字の大文字・小文字は区別しません。</p>
-      <p class="auth-gate__warn">
-        静的サイトのため<strong>厳密なセキュリティではありません</strong>。ソースやリポジトリから迂回・推測される可能性があります。本番の非公開配布には向きません。
-      </p>
-      <form id="auth-gate-form" autocomplete="off">
-        <div class="field">
-          <label for="auth-gate-pass">パスワード</label>
-          <input
-            id="auth-gate-pass"
-            name="site_preview_pass"
-            type="password"
-            autocomplete="off"
-            autocorrect="off"
-            autocapitalize="off"
-            spellcheck="false"
-            required
-          />
-        </div>
-        <p id="auth-gate-error" class="auth-gate__error" role="alert"></p>
-        <button type="submit" class="btn btn--solid" style="width:100%;margin-top:8px;">表示する</button>
-      </form>
-    </div>
-  </div>
-
   <header class="site-header">
     <div class="site-header__inner">
       <a class="site-logo" href="#/">AI参謀室 <span>サービスサイト（モック）</span></a>
@@ -482,7 +454,6 @@
     </div>
   </div>
 
-  <script src="gate.js"></script>
   <script src="mock.js"></script>
 </body>
 </html>
