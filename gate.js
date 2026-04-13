@@ -14,7 +14,7 @@
    * 閲覧用パスワード（デプロイ前に必ず変更してください）
    * GitHub に push した時点で履歴に残るため、機密を置かない・別手段と併用を推奨
    */
-  var SITE_ACCESS_PASSWORD = "CHANGE_ME_PREVIEW";
+  var SITE_ACCESS_PASSWORD = "shiftai2026";
 
   var STORAGE_KEY = "ai_sambo_site_gate_ok";
 

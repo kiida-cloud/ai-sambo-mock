@@ -11,7 +11,7 @@
 GitHub Pages には **HTTP の BASIC 認証がありません**。代わりに **`gate.js`** でクライアント側のパスワード画面を出しています。
 
 1. **`gate.js`** を開き、次を編集してから push してください。
-   - `SITE_ACCESS_PASSWORD` … 配布したい閲覧用パスワード（初期値 `CHANGE_ME_PREVIEW` のままではコンソールに警告が出ます）
+   - `SITE_ACCESS_PASSWORD` … 配布したい閲覧用パスワード（プレースホルダ `CHANGE_ME_PREVIEW` のままだとコンソールに警告が出ます）
    - `GATE_ENABLED` … ゲートをオフにしたいときは `false`（ローカル確認用）
 2. 通過後は **同一タブの `sessionStorage`** に記録され、タブを閉じるまで再入力不要です。
 
