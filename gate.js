@@ -43,8 +43,15 @@
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      err.textContent = "";
-      if (input.value === SITE_ACCESS_PASSWORD) {
+      if (err) err.textContent = "";
+      var entered = String(input.value || "")
+        .replace(/^\uFEFF/, "")
+        .trim();
+      var expected = String(SITE_ACCESS_PASSWORD || "").trim();
+      if (
+        entered.length > 0 &&
+        entered.toLowerCase() === expected.toLowerCase()
+      ) {
         try {
           sessionStorage.setItem(STORAGE_KEY, "1");
         } catch (err2) {
@@ -52,7 +59,7 @@
         }
         hideGate();
       } else {
-        err.textContent = "パスワードが正しくありません";
+        if (err) err.textContent = "パスワードが正しくありません";
         input.value = "";
         input.focus();
       }
