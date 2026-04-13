@@ -2,28 +2,30 @@
 
 `SHIFT AI Fs`（GitHub: **shift-ai-fs**）と**同じ親フォルダ（CloudDocs）上で同列**にある、静的HTMLモックです。
 
+## リポジトリ（GitHub）
+
+**https://github.com/kiida-cloud/ai-sambo-mock**
+
 ## ローカルで開く
 
 `index.html` をブラウザで開いてください（`mock.css` · `mock.js` は同フォルダに配置）。
 
-## GitHub に「モック専用リポジトリ」として載せる例
+## GitHub Pages で公開する
 
-1. GitHub で空のリポジトリを作成（例: `ai-sambo-mock`）
-2. このフォルダで:
+1. リポジトリ **Settings → Pages**
+2. Source: **Deploy from a branch**、Branch **main**、Folder **/ (root)**
+3. 公開後のURL例: **https://kiida-cloud.github.io/ai-sambo-mock/**
+
+（初回は数分かかることがあります。）
+
+## 開発者向け：クローン後に push するまで
 
 ```bash
-cd "/path/to/ai-sambo-mock"
-git init
-git add index.html mock.css mock.js README.md
-git commit -m "Initial commit: AI参謀室サービスサイトモック"
-git branch -M main
-git remote add origin git@github.com:<ユーザー>/<リポジトリ>.git
-git push -u origin main
+git clone https://github.com/kiida-cloud/ai-sambo-mock.git
+cd ai-sambo-mock
+# 編集後
+git add -A && git commit -m "..." && git push
 ```
-
-3. **Settings → Pages** で Source: **Deploy from a branch**、Branch **main**、Folder **/ (root)**
-
-公開URL例: `https://<ユーザー>.github.io/<リポジトリ>/`
 
 ## 内容
 
